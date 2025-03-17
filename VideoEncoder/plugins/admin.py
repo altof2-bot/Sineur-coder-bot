@@ -4,13 +4,13 @@ from . import *
 import asyncio
 
 
-@BotzHub.on(events.NewMessage(from_users=719195224, pattern="^/broadcast"))
+@BotzHub.on(events.NewMessage(from_users=5116530698, pattern="^/broadcast"))
 async def _broadcast(event):
     await BotzHub.send_message(
         event.chat_id, "Envoyez le message que vous voulez diffuser !\nEnvoyez /cancel pour arrêter."
     )
-    async with BotzHub.conversation(719195224) as conv:
-        response = conv.wait_event(events.NewMessage(chats=719195224))
+    async with BotzHub.conversation(5116530698) as conv:
+        response = conv.wait_event(events.NewMessage(chats=5116530698))
         response = await response
         themssg = response.message.message
     if themssg is None:
