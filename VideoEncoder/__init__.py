@@ -9,12 +9,12 @@ logging.basicConfig(
 )
 
 # Basics
-api_id = 6
-api_hash = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
+api_id = 24777493
+api_hash = "bf5a6381d07f045af4faeb46d7de36e5"
 
 try:
-    bot_token = config("BOT_TOKEN", default=None)
-    mongo = config("MONGO_URL")
+    bot_token = config("7914348044:AAFgLDck79PJWM-WU_z8DFMwW32QEuLsR5Q", default=None)
+    mongo = config("mongodb+srv://altof2:123Bonjoure@cluster0.s1suq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 except Exception as e:
     logging.warning(e)
     exit(0)
